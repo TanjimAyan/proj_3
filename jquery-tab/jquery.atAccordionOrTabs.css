@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* CSS Document */
+/* jQuery at Responsive Accordion or Tabs - v1.0.6 - 2020-01-13
+* https://github.com/stazna01/jQuery-rt-Responsive-Tables
+*
+* This plugin is built heavily upon the work by Chris Coyier
+* found at http://css-tricks.com/responsive-data-tables/
+*
+* Copyright (c) 2020 Nathan Stazewski; Licensed MIT */
+
+.aria-only {
+	position: absolute;
+	left: -10000px;
+	overflow:hidden;
+	}
+.at-accordion-or-tabs {
+	position: relative; 
+	margin: 24px auto;
+	border: none;
+	width: 100%;
+	padding: 0;
+	clear: both;
+	/*visibility: hidden; */
+}
+
+.at-accordion-or-tabs > li {
+	list-style: none;
+	padding: 0 !important;
+	margin-bottom: 3px;
+	border: none;
+}
+
+.at-accordion-or-tabs > li > a {
+	display: block;
+	background-color:transparent;
+	text-decoration: none;
+	color: gray;
+	padding: 5px 7px;
+	border: none;
+	font-weight:bold;
+}
+
+.at-accordion-or-tabs > li > a:hover, .at-accordion-or-tabs > li > a.active {
+	background: white;
+}
+
+.at-accordion-or-tabs > li > section {
+	display: none;
+	background:transparent;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 7px;
+	border-bottom: none;
+}
+
+.no-js .at-accordion-or-tabs > li > section {
+  display: block;
+}
+
+.active{
+	box-shadow:none !important;
+}
+
+.at-accordion-or-tabs .at-tab-one-pixel-fix-left, .at-accordion-or-tabs .at-tab-one-pixel-fix-right {
+	display: none;
+	height:1px;
+	width:1px;
+	background-color:#000000;
+	position:absolute;
+	left: -1px;
+	bottom: -1px;
+	}
+	
+.at-accordion-or-tabs .at-tab-one-pixel-fix-right {
+	left:auto;
+	right: -1px;
+	}
+
+.at-accordion-or-tabs.at-tabs {
+	border: none;
+	}
+	
+.at-accordion-or-tabs.at-tabs > li {
+	display: inline;
+	border: none;
+	}
+	
+.at-accordion-or-tabs.at-tabs > li > a {
+	display: inline-block;
+	border: none;
+	z-index:2;
+	position: relative;
+	border-bottom-color: #ffffff;
+	border-radius: 0px;
+	box-sizing: border-box;
+	margin-right:20px;
+	padding:10px 20px;
+	}
+	
+.at-accordion-or-tabs.at-tabs > li > a.active {
+	z-index:2;
+	background-color: white;
+	color: #000000;
+	}
+.at-accordion-or-tabs.at-tabs .at-tab-one-pixel-fix-left, .at-accordion-or-tabs.at-tabs .at-tab-one-pixel-fix-right {
+	display:inline-block;
+	}
+	
+.at-accordion-or-tabs.at-tabs > li > section {
+	float: left;
+	top: 0px;
+	left: 0;
+	margin-bottom: 24px;
+	border:none;
+	z-index: 2;
+	border-radius: 0px;
+	box-sizing: border-box;
+	}
